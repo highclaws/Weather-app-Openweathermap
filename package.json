@@ -7,8 +7,8 @@
     "start": "node server.js",
     "postinstall": "npm run build",
     "build": "node build/build.js",
+    "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build",
     "lint": "eslint --ext .js,.vue src"
-
   },
   "dependencies": {
     "express": "^4.16.3",
