@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "node build/build.js",
-    "start": "node server.js",
     "dev": "node build/dev-server.js",
-    "lint": "vue-cli-service lint"
+    "start": "node server.js",
+    "postinstall": "npm run build",
+    "build": "node build/build.js",
+    "lint": "eslint --ext .js,.vue src"
 
   },
   "dependencies": {
